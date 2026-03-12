@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Data Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div style="margin-bottom: 15px;">Let's rock today.</div>
+            <div class="header-bottom">
+                <h1>Welcome back, Jun. 👋</h1>
+                <div class="today-date" id="todayDate"></div>
+            </div>
+        </header>
+
+        <div class="columns">
+            <div class="left-column">
+                <div class="card" style="margin-bottom: 30px;">
+                    <strong style="display:block; margin-bottom:10px;">SET DAILY TARGETS</strong>
+                    <div class="target-inputs">
+                        <input type="number" id="targetCals" placeholder="Calories" min="0">
+                        <input type="number" id="targetPro" placeholder="Protein(g)" min="0">
+                        <input type="number" id="targetFat" placeholder="Fat(g)" min="0">
+                        <input type="number" id="targetCarb" placeholder="Carb(g)" min="0">
+                    </div>
+                    <button id="setTargetsBtn" style="margin-top: 10px; width: 100%;">Set Targets</button>
+                </div>
+
+                <div id="remainingArea" class="card" style="display: none;">
+                    <strong style="display:block; margin-bottom:10px;">REMAINING TO EAT</strong>
+                    <div class="label-row"><span>CALORIES</span><span id="remCals">0</span></div>
+                    <div class="label-row"><span>PROTEIN</span><span id="remPro">0 g</span></div>
+                    <div class="label-row"><span>FAT</span><span id="remFat">0 g</span></div>
+                    <div class="label-row"><span>CARBS</span><span id="remCarb">0 g</span></div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="search-group">
+                    <input type="text" id="foodInput" placeholder="Enter food name" autocomplete="off">
+                    <button id="searchBtn">Find</button>
+                </div>
+
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

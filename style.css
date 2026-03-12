@@ -1,0 +1,134 @@
+body {
+    background-color: #E5E1DC;
+    color: black;
+    font-family: Arial,'Times New Roman', Times, serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.columns {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.left-column {
+    flex: 1;
+    min-width: 0;
+}
+
+.right-column {
+    flex: 1;
+    min-width: 0;
+}
+
+header {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.today-date {
+    font-size: 16px;
+    color: #333;
+    background-color: #EDEBE7;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.target-inputs {
+    display: flex;
+    gap: 5px;
+}
+
+.target-inputs input {
+    min-width: 0;
+    padding: 8px 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.search-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+input {
+    flex: 1;
+    border: 2px solid white;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    border-radius: 6px;
+    background-color: #F5F3F0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+button {
+    background: #EDEBE7;
+    color: black;
+    border: 2px solid white;
+    padding: 0 20px;
+    height: 100%;
+    min-height: 40px;
+    font-family: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #F7F0E8;
+}
+
+button:active {
+    background: #ddd;
+    color: black;
+}
+
+.card {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #EDEBE7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 8px 0;
+}
+
+.error-msg {
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
